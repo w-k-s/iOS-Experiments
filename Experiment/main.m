@@ -2,8 +2,8 @@
 //  main.m
 //  Experiment
 //
-//  Created by Waqqas Sheikh on 06/12/2016.
-//  Copyright © 2016 Asfour. All rights reserved.
+//  Created by W.K.S on 06/12/2016.
+//  Copyright © 2016 W.K.S. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

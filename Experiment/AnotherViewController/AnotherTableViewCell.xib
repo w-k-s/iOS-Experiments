@@ -40,7 +40,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-lD-bKh" userLabel="Bottom View">
                         <rect key="frame" x="8" y="108" width="359" height="121.5"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T71-eA-0fA">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T71-eA-0fA" userLabel="Start">
                                 <rect key="frame" x="8" y="8" width="109" height="106"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There wont be much text here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kow-vT-V3r">
@@ -58,7 +58,7 @@
                                     <constraint firstItem="kow-vT-V3r" firstAttribute="top" secondItem="T71-eA-0fA" secondAttribute="top" constant="8" id="cOV-3M-wCG"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Tf-zT-JGV">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Tf-zT-JGV" userLabel="Middle">
                                 <rect key="frame" x="242" y="8" width="109" height="106"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's not kid ourselves. You have what I want and i have what you want so let's just make this a quick trade" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qut-QZ-3F6">
@@ -76,7 +76,7 @@
                                     <constraint firstAttribute="trailing" secondItem="qut-QZ-3F6" secondAttribute="trailing" constant="8" id="nHA-qq-bWH"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-fh-cRh">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-fh-cRh" userLabel="End">
                                 <rect key="frame" x="125" y="8" width="109" height="106"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There will be alot more text in this littl cell that i've got over here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k47-1i-F5d">
@@ -97,19 +97,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Tf-zT-JGV" firstAttribute="width" secondItem="T71-eA-0fA" secondAttribute="width" id="1ht-YU-0S7"/>
-                            <constraint firstItem="eVT-fh-cRh" firstAttribute="height" secondItem="T71-eA-0fA" secondAttribute="height" id="4lQ-m0-aB3"/>
-                            <constraint firstItem="T71-eA-0fA" firstAttribute="top" secondItem="CNS-lD-bKh" secondAttribute="top" constant="8" id="5hT-JH-Ujr"/>
-                            <constraint firstItem="9Tf-zT-JGV" firstAttribute="height" secondItem="T71-eA-0fA" secondAttribute="height" id="CdT-Tp-sBr"/>
-                            <constraint firstItem="9Tf-zT-JGV" firstAttribute="leading" secondItem="eVT-fh-cRh" secondAttribute="trailing" constant="8" id="IiT-oi-4qI"/>
-                            <constraint firstAttribute="bottom" secondItem="T71-eA-0fA" secondAttribute="bottom" constant="8" id="JwT-c7-Ndr"/>
-                            <constraint firstItem="eVT-fh-cRh" firstAttribute="top" secondItem="CNS-lD-bKh" secondAttribute="top" constant="8" id="MQH-iK-vPf"/>
-                            <constraint firstAttribute="height" id="YSh-ay-jSu"/>
-                            <constraint firstAttribute="trailing" secondItem="9Tf-zT-JGV" secondAttribute="trailing" constant="8" id="Ydf-7k-QWm"/>
-                            <constraint firstItem="eVT-fh-cRh" firstAttribute="leading" secondItem="T71-eA-0fA" secondAttribute="trailing" constant="8" id="qwM-wm-HQC"/>
-                            <constraint firstItem="eVT-fh-cRh" firstAttribute="width" secondItem="T71-eA-0fA" secondAttribute="width" id="t71-KG-Vrc"/>
-                            <constraint firstItem="9Tf-zT-JGV" firstAttribute="top" secondItem="CNS-lD-bKh" secondAttribute="top" constant="8" id="xHS-xF-UPE"/>
-                            <constraint firstItem="T71-eA-0fA" firstAttribute="leading" secondItem="CNS-lD-bKh" secondAttribute="leading" constant="8" id="zkd-A8-gux"/>
+                            <constraint firstItem="9Tf-zT-JGV" firstAttribute="width" secondItem="T71-eA-0fA" secondAttribute="width" priority="998" id="1ht-YU-0S7"/>
+                            <constraint firstItem="eVT-fh-cRh" firstAttribute="height" secondItem="T71-eA-0fA" secondAttribute="height" priority="998" id="4lQ-m0-aB3"/>
+                            <constraint firstItem="T71-eA-0fA" firstAttribute="top" secondItem="CNS-lD-bKh" secondAttribute="top" priority="998" constant="8" id="5hT-JH-Ujr"/>
+                            <constraint firstItem="9Tf-zT-JGV" firstAttribute="height" secondItem="T71-eA-0fA" secondAttribute="height" priority="998" id="CdT-Tp-sBr"/>
+                            <constraint firstItem="9Tf-zT-JGV" firstAttribute="leading" secondItem="eVT-fh-cRh" secondAttribute="trailing" priority="998" constant="8" id="IiT-oi-4qI"/>
+                            <constraint firstAttribute="bottom" secondItem="T71-eA-0fA" secondAttribute="bottom" priority="998" constant="8" id="JwT-c7-Ndr"/>
+                            <constraint firstItem="eVT-fh-cRh" firstAttribute="top" secondItem="CNS-lD-bKh" secondAttribute="top" priority="998" constant="8" id="MQH-iK-vPf"/>
+                            <constraint firstAttribute="height" priority="999" id="YSh-ay-jSu"/>
+                            <constraint firstAttribute="trailing" secondItem="9Tf-zT-JGV" secondAttribute="trailing" priority="998" constant="8" id="Ydf-7k-QWm"/>
+                            <constraint firstItem="eVT-fh-cRh" firstAttribute="leading" secondItem="T71-eA-0fA" secondAttribute="trailing" priority="998" constant="8" id="qwM-wm-HQC"/>
+                            <constraint firstItem="eVT-fh-cRh" firstAttribute="width" secondItem="T71-eA-0fA" secondAttribute="width" priority="998" id="t71-KG-Vrc"/>
+                            <constraint firstItem="9Tf-zT-JGV" firstAttribute="top" secondItem="CNS-lD-bKh" secondAttribute="top" priority="998" constant="8" id="xHS-xF-UPE"/>
+                            <constraint firstItem="T71-eA-0fA" firstAttribute="leading" secondItem="CNS-lD-bKh" secondAttribute="leading" priority="998" constant="8" id="zkd-A8-gux"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -130,7 +130,6 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="bottomViewHeightConstraint" destination="YSh-ay-jSu" id="gTb-tU-n85"/>
-                <outlet property="constraint" destination="JwT-c7-Ndr" id="Vy4-Wb-Bjx"/>
             </connections>
             <point key="canvasLocation" x="27.5" y="250"/>
         </tableViewCell>

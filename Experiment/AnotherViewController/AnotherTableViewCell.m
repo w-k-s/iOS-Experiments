@@ -2,16 +2,14 @@
 //  AnotherTableViewCell.m
 //  Experiment
 //
-//  Created by Waqqas Sheikh on 21/01/2017.
-//  Copyright © 2017 Asfour. All rights reserved.
+//  Created by W.K.S on 21/01/2017.
+//  Copyright © 2017 W.K.S. All rights reserved.
 //
 
 #import "AnotherTableViewCell.h"
-#import "UIView+Anchor.h"
 
 @interface AnotherTableViewCell()
 @property (weak,nonatomic) IBOutlet NSLayoutConstraint * bottomViewHeightConstraint;
-@property (weak,nonatomic) IBOutlet NSLayoutConstraint * constraint;
 @end
 
 @implementation AnotherTableViewCell
@@ -20,6 +18,7 @@
 {
     [super awakeFromNib];
     [self setupView];
+    self.bottomViewHeightConstraint.active = NO;
 }
 
 -(void) setupView
@@ -31,14 +30,14 @@
 {
     
     self.bottomViewHeightConstraint.active = !self.bottomViewHeightConstraint.active;
-
+    
+    
      [UIView animateWithDuration:0.3 animations:^{
         [self layoutIfNeeded];
         [self.delegate cellRequiresUpdates:self];
     } completion:^(BOOL finished) {
         
     }];
-    
 }
 
 @end
